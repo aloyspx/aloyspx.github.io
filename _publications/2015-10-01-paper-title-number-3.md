@@ -1,7 +1,7 @@
 ---
 title: "Image-level supervision and self-training for transformer-based cross-modality tumor segmentation"
 collection: publications
-category: journal
+category: manuscripts
 excerpt: 'This paper presents a novel approach using image-level supervision and self-training techniques to improve transformer-based tumor segmentation across different imaging modalities.'
 date: '2024-12-01'
 venue: 'Medical Image Analysis'
