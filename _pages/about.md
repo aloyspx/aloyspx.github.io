@@ -17,17 +17,18 @@ I'm a PhD student in Computer Engineering at [Polytechnique Montréal](https://w
 📝 Thesis Topic Overview
 ======
 
-My topic focuses on developing machine learning tools to improve treatment strategies for patients with HPV-associated oropharyngeal cancer. This work sits at the intersection of medical imaging, machine learning, and oncology.
+My topic focuses on developing machine learning tools to improve treatment strategies for patients with HPV-associated oropharyngeal cancer. 
 
 ### The Challenge
-Modern cancer treatments need to balance effectiveness with patient quality of life. For many patients with HPV-associated throat cancers, standard radiation therapy may be more intensive than necessary. The key question becomes: how can we identify which patients might benefit from less aggressive treatment?
 
-#### Our Approach
+Modern cancer treatments need to balance effectiveness with patient quality of life. For many patients with HPV-associated oropharyngeal cancers, standard radiation therapy may be more intensive than necessary. The key question becomes: **how can we identify which patients might benefit from less aggressive treatment?**
+
+### Our Approach
 
 We're building tools that:
 
 - Learn from diverse medical images without requiring extensive expert annotations
-- Track tumor changes over time by leveraging treatment day scans
+- Track tumor changes over time by leveraging treatment day scans and expert annotated planning scans
 - Putting it all together to predict treatment outcomes to support clinical decision-making
 
 This research aims to provide clinicians with powerful tools to make more personalized treatment decisions, potentially reducing treatment side effects while maintaining optimal cancer control.
