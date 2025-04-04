@@ -1,7 +1,7 @@
 ---
 title: "Improving Accuracy and Runtime of Skeletal Tracking of Lower Limbs for Athletic Jump Mechanics Assessment"
 collection: publications
-category: manuscripts
+category: conferences
 excerpt: 'This paper presents an improved approach to skeletal tracking for athletic jump analysis, focusing on both accuracy and computational efficiency.'
 date: '2021-12-01'
 venue: '2021 43rd Annual International Conference of the IEEE Engineering in Medicine & Biology Society (EMBC)'
