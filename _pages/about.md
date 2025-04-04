@@ -12,8 +12,7 @@ Welcome to my website !
 🔍 Biography
 ======
 
-I'm a PhD student in Computer Engineering at Polytechnique Montréal and CRCHUM under the supervision of Dr. Samuel Kadoury. My main research interests lie in machine learning for medical image analysis where I focus on multi-task and self-supervised learning. I'm also passionate about medical device innovation and entrepreneurship. Outside the lab, you’ll probably find me at the hockey rink 🏒!
-
+I'm a PhD student in Computer Engineering at Polytechnique Montréal and CRCHUM, working under the supervision of Dr. Samuel Kadoury. My research focuses on machine learning for medical image analysis, with an emphasis on multi-task and self-supervised learning methods. Beyond research, I'm passionate about medical device entrepreneurship as I believe that translating innovations from lab to clinic is key to making a real-world impact. When I’m not in the lab, you’ll probably find me at the rink 🏒!
 📝 Thesis Topic Overview
 ======
 
