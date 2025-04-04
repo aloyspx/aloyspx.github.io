@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : ""
+title                    : "Your Name / Site Title"
 title_separator          : "-"
 name                     : &name "Aloys Portafaix"
 description              : &description "personal description"
