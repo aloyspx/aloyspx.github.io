@@ -15,5 +15,8 @@ I'm a PhD student in Computer Engineering at Polytechnique Montréal, working on
 📰 Latest Developments
 ======
 
+📄 **Conference Submission** – We submitted a paper to **MICCAI 2025** and are currently awaiting reviews. 
 
+🧠 **Challenge Participation** – We took part in the **MBH-Seg MICCAI 2024 Challenge**, placing in the **top 10** during the first phase and earning an invitation to the second phase, where we ranked **7th overall**. 
 
+📰 **New Publication** – Our paper **"Image-level supervision and self-training for transformer-based cross-modality tumor segmentation"** was published in *Medical Image Analysis*.
