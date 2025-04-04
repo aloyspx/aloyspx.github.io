@@ -28,8 +28,8 @@ Modern cancer treatments need to balance effectiveness with patient quality of l
 We're building tools that:
 
 - Learn from diverse medical images without requiring extensive expert annotations
-- Track tumor changes over time by leveraging treatment day scans and expert annotated planning scans
-- Putting it all together to predict treatment outcomes to support clinical decision-making
+- Track tumor changes over time by leveraging treatment day scans
+- Put it all together to predict treatment outcomes to support clinical decision-making
 
 This research aims to provide clinicians with powerful tools to make more personalized treatment decisions, potentially reducing treatment side effects while maintaining optimal cancer control.
 
