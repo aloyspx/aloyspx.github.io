@@ -1,7 +1,7 @@
 ---
 title: "Computer vision-based guidance tool for correct radiographic hand positioning"
 collection: publications
-category: manuscripts
+category: conferences
 excerpt: 'This paper introduces a computer vision tool to assist with proper hand positioning during radiographic imaging procedures.'
 date: '2024-12-01'
 venue: "Medical Imaging 2024: Image Perception, Observer Performance, and Technology Assessment"
