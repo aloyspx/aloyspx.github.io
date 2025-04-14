@@ -10,4 +10,4 @@ collection: portfolio
 
 ## Things to do
 
-👨‍💻 The code is available [here](https://github.com/aloyspx/CycleGANs).
+Coming soon...
