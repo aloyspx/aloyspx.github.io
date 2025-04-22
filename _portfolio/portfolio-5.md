@@ -21,6 +21,6 @@ The experimental results show that all three tested models (VAE, β-VAE, and iVA
 
 📝 The report is available [here](https://drive.google.com/file/d/15oJx2X1VohjsTj2FOaKoOcjL09J998RE/view?usp=sharing).
 
-👨‍💻 The code is available [here]().
+👨‍💻 The code is available [here](https://github.com/aloyspx/CausalVAE).
 
 btw, this is a great course with a great teacher.
