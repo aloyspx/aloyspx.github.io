@@ -1,6 +1,6 @@
 ---
 title: "Code - Causal Analysis with Longitudinal CBCTs"
-excerpt: "Course project for the MILA Causal Inference and ML course with Dhanya Sridhar"
+excerpt: "Course project for the MILA Causal Inference and ML course with Dhanya Sridhar <br/><br/><img width='750' src='/images/cbct_pert.png'>"
 collection: portfolio
 ---
 
