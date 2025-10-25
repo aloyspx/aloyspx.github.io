@@ -36,7 +36,7 @@ This research aims to provide clinicians with powerful tools to make more person
 ⚠️ Latest Developments
 ======
 <br>
-📄 **Conference Submission** – We submitted a paper to **MICCAI 2025** and are currently awaiting reviews. 
+📰 **New Publication** – Our paper was **"[Self-supervised Pretraining and Multi-label Decoding for Intracranial Hemorrhage Segmentation](https://link.springer.com/chapter/10.1007/978-3-032-07945-9_9)"** published in the **MICCAI SWITCH 2025** conference proceedings.
 
 🧠 **Challenge Participation** – We took part in the **[MBH-Seg MICCAI 2024 Challenge](https://mbh-seg.com/)**, placing in the **top 10** during the first phase and earning an invitation to the second phase, where we ranked **7th overall**. 
 

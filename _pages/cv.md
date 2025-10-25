@@ -89,6 +89,7 @@ Created real-time 3D pose estimation tool and Android app for jump assessments u
 - **Top 3 Poster Prize** – AI at the Medical Faculty Symposium (LMU), 2023
 - **Globalink Research Award** – Mitacs, 2022
 - **Conference & Exposition Award** – Concordia University, 2021
+- **NSERC CREATE Surgival Innovation Scholarship** - McGill and Concordia University, 2021/23
 - **Hydro-Quebec Master's Award** – 2021/22
 - **NSERC USRA** – 2020
 

@@ -1,0 +1,11 @@
+---
+title: "Self-supervised Pretraining and Multi-label Decoding for Intracranial Hemorrhage Segmentation"
+collection: publications
+category: conferences
+excerpt: 'We propose a two-phase learning framework leveraging self-supervised pretraining and multi-label decoding to improve intracranial hemorrhage segmentation across heterogeneous datasets.'
+date: '2025-09-23'
+venue: 'Image Analysis in Stroke Diagnosis and Interventions (SWITCH 2025), in conjunction with MICCAI 2025'
+paperurl: 'https://doi.org/10.1007/978-3-032-07945-9_9'
+citation: 'Portafaix, A., Létourneau-Guillon, L., & Kadoury, S. (2025). &quot;Self-supervised Pretraining and Multi-label Decoding for Intracranial Hemorrhage Segmentation.&quot; In <i>Image Analysis in Stroke Diagnosis and Interventions: 5th International Workshop, SWITCH 2025, Held in Conjunction with MICCAI 2025, Daejeon, South Korea, Proceedings</i>, Springer-Verlag, pp. 83–93. https://doi.org/10.1007/978-3-032-07945-9_9'
+---
+**Abstract**: Automated segmentation of intracranial hemorrhage (ICH) is an important clinical task limited by the scarcity of high-quality annotated data and variability across datasets. To address these challenges, we propose a novel two-phase learning framework that leverages self-supervised pretraining and multi-label decoding. First, we pretrain a hierarchical vision transformer on over 25,000 head CT cases using a Masked Autoencoder (MAE) strategy to learn robust multi-scale feature representations. For the downstream task, we append a multi-label decoder with dataset-specific heads, which enables joint learning from four distinct ICH segmentation datasets with diverse annotation protocols. A tailored sampling strategy further addresses class imbalance and heterogeneity across datasets. Our results demonstrate superior performance, with the proposed model achieving a mean Dice score of 63.57% (±12.30), surpassing the next best-performing method by 2.69%. Notably, the proposed MAE-based model outperformed its BYOL-pretrained counterpart, suggesting that MAE’s reconstruction-based objective is a more effective pretraining strategy for learning the dense, spatially-rich representations required for this segmentation task.
