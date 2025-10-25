@@ -26,8 +26,14 @@ Surgical Innovation Fellow, [McGill University](https://www.mcgill.ca/medsimcent
 ## 🔬 Research Experience
 
 **Graduate Researcher**  
+*CHUSJ, Montréal* – Jan 2024–Present  
+Working on pediatric glioma segmentation deep learning models and dataset development
+Supervisors: Dr. Samuel Kadoury, Dr. Mathieu Deshaes & Dr. Sébastien Perrault
+
+**Graduate Researcher**  
 *CRCHUM, Montréal* – Sept 2023–Present  
-Supervisors: Dr. Samuel Kadoury & Dr. Létourneau
+Working on intracranial hemorrhage segmentation deep learning models and dataset development
+Supervisors: Dr. Samuel Kadoury & Dr. Létourneau-Guillon
 
 **Guest Graduate Researcher**  
 *Ludwig Maximilian University, Munich* – Mar 2023–Aug 2023  
