@@ -161,6 +161,10 @@ exclude:
   - PRODUCT.md
   - DESIGN.md
   - CONTENT_SOURCES.md
+  - markdown_generator
+  - talkmap
+  - talkmap.py
+  - talkmap_out.ipynb
   - .impeccable
   - .agents
   - .codex
@@ -247,6 +251,8 @@ defaults:
       comments: true
       share: true
       related: true
+      sitemap: false
+      robots: 'noindex, follow'
   # _pages
   - scope:
       path: ""
@@ -254,6 +260,8 @@ defaults:
     values:
       layout: single
       author_profile: true
+      sitemap: false
+      robots: 'noindex, follow'
   # _teaching
   - scope:
       path: ""
@@ -263,6 +271,8 @@ defaults:
       author_profile: true
       share: true
       comments: true
+      sitemap: false
+      robots: 'noindex, follow'
   # _publications
   - scope:
       path: ""
@@ -272,6 +282,8 @@ defaults:
       author_profile: true
       share: true
       comments: true
+      sitemap: true
+      robots: 'index, follow, max-image-preview:large'
   # _portfolio
   - scope:
       path: ""
@@ -281,6 +293,8 @@ defaults:
       author_profile: true
       share: true
       comment: true
+      sitemap: true
+      robots: 'index, follow, max-image-preview:large'
   # _talks
   - scope:
       path: ""
@@ -289,6 +303,8 @@ defaults:
       layout: talk
       author_profile: true
       share: true
+      sitemap: false
+      robots: 'noindex, follow'
 
 
 # Sass/SCSS

@@ -3,14 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% unless page.url == '/' %}{{ page.title | escape }} · {% endunless %}{{ site.title | escape }}</title>
-  <meta name="description" content="{{ page.description | default: page.excerpt | default: site.description | strip_html | normalize_whitespace | escape }}">
+  {% capture page_seo_title %}{% if page.seo_title %}{{ page.seo_title }}{% else %}{% unless page.url == '/' %}{{ page.title }} · {% endunless %}{{ site.title }}{% endif %}{% endcapture %}
+  {% assign page_seo_description = page.description | default: page.excerpt | default: site.description | strip_html | normalize_whitespace %}
+  <title>{{ page_seo_title | strip | escape }}</title>
+  <meta name="description" content="{{ page_seo_description | escape }}">
+  <meta name="author" content="{{ site.author.name | escape }}">
+  <meta name="robots" content="{{ page.robots | default: 'index, follow, max-image-preview:large' | escape }}">
+  {% if site.google_site_verification %}<meta name="google-site-verification" content="{{ site.google_site_verification | escape }}">{% endif %}
   <link rel="canonical" href="{{ page.url | absolute_url }}">
-  <meta property="og:title" content="{{ page.title | default: site.title | escape }}">
-  <meta property="og:description" content="{{ page.description | default: site.description | escape }}">
+  <meta property="og:title" content="{{ page_seo_title | strip | escape }}">
+  <meta property="og:description" content="{{ page_seo_description | escape }}">
+  <meta property="og:site_name" content="{{ site.title | escape }}">
+  <meta property="og:locale" content="{{ site.locale | replace: '-', '_' }}">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
   <meta property="og:type" content="website">
   <meta property="og:image" content="{{ '/images/profile_pic.png' | absolute_url }}">
+  <meta property="og:image:alt" content="Portrait of Aloys Portafaix">
+  <meta name="twitter:card" content="summary">
+  {% include editorial-structured-data.html %}
   <meta name="theme-color" content="#f9f9f6">
   <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
   <link rel="preload" href="{{ '/assets/fonts/barlow-condensed-semibold.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>

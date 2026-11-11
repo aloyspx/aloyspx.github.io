@@ -1,6 +1,9 @@
 ---
 layout: editorial-page
 title: "CV"
+description: "Aloys Portafaix's CV: medical AI research at Polytechnique Montréal and CRCHUM, clinical innovation, publications, and software development experience."
+sitemap: true
+robots: 'index, follow, max-image-preview:large'
 permalink: /cv/
 prose: true
 intro: "Research, clinical prototyping, and software development."

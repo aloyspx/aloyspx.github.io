@@ -1,0 +1,48 @@
+{% if page.url == '/' %}
+{% assign profile_url = '/' | absolute_url %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": {{ profile_url | append: '#website' | jsonify }},
+      "url": {{ profile_url | jsonify }},
+      "name": {{ site.title | jsonify }},
+      "inLanguage": {{ site.locale | jsonify }},
+      "publisher": {"@id": {{ profile_url | append: '#person' | jsonify }}}
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": {{ profile_url | append: '#profile' | jsonify }},
+      "url": {{ profile_url | jsonify }},
+      "name": {{ page_seo_title | strip | jsonify }},
+      "description": {{ page_seo_description | jsonify }},
+      "isPartOf": {"@id": {{ profile_url | append: '#website' | jsonify }}},
+      "mainEntity": {"@id": {{ profile_url | append: '#person' | jsonify }}}
+    },
+    {
+      "@type": "Person",
+      "@id": {{ profile_url | append: '#person' | jsonify }},
+      "name": {{ site.author.name | jsonify }},
+      "url": {{ profile_url | jsonify }},
+      "image": {{ '/images/profile_pic.png' | absolute_url | jsonify }},
+      "description": {{ site.description | jsonify }},
+      "jobTitle": "PhD researcher in medical AI",
+      "affiliation": [
+        {"@type": "Organization", "name": "Polytechnique Montréal"},
+        {"@type": "Organization", "name": "Centre de recherche du CHUM (CRCHUM)"}
+      ],
+      "knowsAbout": ["Medical image analysis", "Self-supervised learning", "Computer vision", "Clinical prototyping"],
+      "sameAs": [
+        {{ site.author.googlescholar | jsonify }},
+        {{ site.author.orcid | jsonify }},
+        {{ 'https://github.com/' | append: site.author.github | jsonify }},
+        {{ 'https://www.linkedin.com/in/' | append: site.author.linkedin | append: '/' | jsonify }}
+      ],
+      "mainEntityOfPage": {"@id": {{ profile_url | append: '#profile' | jsonify }}}
+    }
+  ]
+}
+</script>
+{% endif %}

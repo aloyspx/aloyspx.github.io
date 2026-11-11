@@ -2,6 +2,9 @@
 layout: editorial
 permalink: /
 title: "Aloys Portafaix"
+seo_title: "Aloys Portafaix | Medical AI Researcher"
+sitemap: true
+robots: 'index, follow, max-image-preview:large'
 description: "Medical AI research and clinical tools. Aloys Portafaix is a PhD researcher at Polytechnique Montréal and CRCHUM, working on self-supervised learning and medical image analysis."
 redirect_from:
   - /about/
