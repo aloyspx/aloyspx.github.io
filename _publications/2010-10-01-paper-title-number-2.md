@@ -3,7 +3,8 @@ title: "Computer vision-based guidance tool for correct radiographic hand positi
 collection: publications
 category: conferences
 excerpt: 'This paper introduces a computer vision tool to assist with proper hand positioning during radiographic imaging procedures.'
-date: '2024-12-01'
+date: '2024-03-29'
+authors: 'Aloys Portafaix, Paul Reidler, Bastian Sabel, Jakob Dexl, Katharina Jeblick, Andreas Mittermeier, Michael Ingrisch, and Thomas Fevens'
 venue: "Medical Imaging 2024: Image Perception, Observer Performance, and Technology Assessment"
 paperurl: 'https://doi.org/10.1117/12.3005807'
 citation: 'Portafaix, A., Reidler, P., Sabel, B., Dexl, J., Jeblick, K., Mittermeier, A., Ingrisch, M., & Fevens, T. (2024). &quot;Computer vision-based guidance tool for correct radiographic hand positioning.&quot; <i>Medical Imaging 2024: Image Perception, Observer Performance, and Technology Assessment</i>. 12929, 219-228.'

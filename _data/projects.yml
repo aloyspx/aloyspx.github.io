@@ -1,0 +1,54 @@
+- title: "DeJEPA"
+  subtitle: "Dense features from unlabelled medical volumes."
+  meta: "Self-supervised learning · MLMI 2026"
+  image: /images/research/dejepa-overview.png
+  alt: "DeJEPA framework: overlapping CT crops, multi-scale features, voxel embedding alignment, and distribution regularization."
+  url: /portfolio/dejepa/
+  description: "A non-contrastive self-supervised framework for learning voxel-level features in 3D medical images. The open implementation includes pretraining, probing, and fine-tuning."
+  code: https://github.com/aloyspx/De-JEPA
+- title: "XAct"
+  subtitle: "Real-time guidance for radiographic positioning."
+  meta: "Clinical prototyping · Computer vision · SPIE 2024"
+  image: /images/research/xact-poster.jpg
+  alt: "XAct prototype displaying hand landmarks and radiographic positioning feedback."
+  url: /portfolio/portfolio-1/
+  description: "From a clinical need to an evaluated prototype: a computer vision and depth-sensing tool that helps guide hand positioning for X-rays. Developed through the Surgical Innovation Program and evaluated at LMU Klinikum."
+  code: https://github.com/aloyspx/XAct
+- title: "MoDATTS"
+  subtitle: "Tumour segmentation across imaging modalities."
+  meta: "Cross-modality learning · Medical Image Analysis 2024"
+  image: /images/modatts_res.png
+  alt: "MoDATTS research figure comparing cross-modality brain tumour segmentation performance across four MRI contrasts."
+  url: /portfolio/modatts/
+  description: "Combining image translation, transformer-based segmentation, and self-training to reduce reliance on annotations in a target imaging modality. Co-first-authored work with Malo Alefsen de Boisredon d’Assier."
+- title: "Self-supervised hemorrhage segmentation"
+  subtitle: "Pretraining meets multi-label decoding."
+  meta: "SWITCH · MICCAI 2025"
+  url: /portfolio/switch/
+  description: "A two-stage framework that learns from unlabelled head CT scans and combines segmentation datasets with different annotation protocols through dataset-specific decoding heads."
+- title: "Movement analysis & HurtBlocker"
+  subtitle: "A research contribution to a larger clinical tool."
+  meta: "Kinect integration · Real-time pose estimation · EMBC 2021"
+  image: /images/demo_kits.png
+  alt: "Research prototype for Kinect-based athletic movement assessment."
+  url: /portfolio/portfolio-2/
+  description: "My contributions included Azure Kinect integration and real-time joint depth estimation and correction. This research formed part of the wider work behind HurtBlocker; I contributed to a focused part of the project."
+- title: "Intracranial hemorrhage segmentation"
+  subtitle: "Learning across datasets and annotation protocols."
+  meta: "Medical image segmentation · SWITCH 2025 · Radiology Advances 2026"
+  url: /portfolio/portfolio-3/
+  description: "Work spanning the MBH-Seg challenge, self-supervised pretraining, multi-label decoding, and baseline model development for a multiclass head CT dataset and benchmark."
+- title: "Longitudinal CBCT representations"
+  subtitle: "Exploring features of treatment-day scans."
+  meta: "Causal representation learning · Research course project"
+  image: /images/cbct_pert.png
+  alt: "CBCT image reconstructions and perturbation maps from the causal representation learning project."
+  url: /portfolio/portfolio-4/
+  description: "A comparison of VAE, beta-VAE, and iVAE approaches for learning representations from longitudinal head and neck cancer images. An exploratory project that also documents the methods' limitations."
+  code: https://github.com/aloyspx/CausalVAE
+- title: "2D & 3D CycleGAN"
+  subtitle: "Image translation baselines for medical imaging."
+  meta: "Open-source implementation"
+  url: /portfolio/portfolio-5/
+  description: "An implementation supporting volumetric inputs and multiple discriminator architectures, developed for comparative experiments in the MoDATTS work."
+  code: https://github.com/aloyspx/CycleGANs

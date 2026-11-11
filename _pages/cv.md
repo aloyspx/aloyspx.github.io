@@ -1,111 +1,113 @@
 ---
-layout: archive
+layout: editorial-page
 title: "CV"
 permalink: /cv/
-author_profile: true
+prose: true
+intro: "Research, clinical prototyping, and software development."
 redirect_from:
   - /resume
 ---
 
-## 🎓 Education
+<div class="cv-actions"><button type="button" data-print-cv hidden>Print / save as PDF</button></div>
 
-**Ph.D. in Computer Engineering**  
-*Polytechnique Montréal*, 2023–Present  
-Supervisor: Dr. Samuel Kadoury  
+<div class="print-only"><h2>Aloys Portafaix</h2><p>Montréal, Canada · {{ site.author.email }}<br>{{ site.url }} · {{ site.author.googlescholar }}</p></div>
 
-**M.Sc. in Computer Science**  
-*Concordia University*, 2021–2023  
-Supervisor: Dr. Thomas Fevens  
-Surgical Innovation Fellow, [McGill University](https://www.mcgill.ca/medsimcentre/innovation/surgical-innovation-program), 2021–2022
+PhD researcher in medical AI at Polytechnique Montréal and CRCHUM. My work connects self-supervised representation learning, medical image segmentation, and clinical translation.
 
-**B.Sc. in Computer Science (Honours & Distinction)**  
-*Concordia University*, 2016–2020
+## Education
 
----
+**PhD in Computer Engineering**<br>
+Polytechnique Montréal · August 2023–present<br>
+Supervisor: Samuel Kadoury. Supported by the NSERC Canada Graduate Research Scholarship – Doctoral (CGRS D).
 
-## 🔬 Research Experience
+**Master's in Computer Science**<br>
+Concordia University · 2021–2023<br>
+Supervisor: Thomas Fevens. Master's thesis research at LMU Munich, March–August 2023.
 
-**Graduate Researcher**  
-*CHUSJ, Montréal* – Jan 2024–Present  
-Working on pediatric glioma segmentation deep learning models and dataset development
-Supervisors: Dr. Samuel Kadoury, Dr. Mathieu Deshaes & Dr. Sébastien Perrault
+**Surgical Innovation Fellow**<br>
+McGill University · 2021–2022
 
-**Graduate Researcher**  
-*CRCHUM, Montréal* – Sept 2023–Present  
-Working on intracranial hemorrhage segmentation deep learning models and dataset development
-Supervisors: Dr. Samuel Kadoury & Dr. Létourneau-Guillon
+**Bachelor's in Honours Computer Science**<br>
+Concordia University · 2018–2021
 
-**Guest Graduate Researcher**  
-*Ludwig Maximilian University, Munich* – Mar 2023–Aug 2023  
-Developed a radiographic hand positioning enforcement tool  
-Supervisors: Dr. Thomas Fevens & Dr. Michael Ingrisch
+## Research experience
 
-**Guest Graduate Researcher**  
-*Ludwig Maximilian University, Munich* – Sept 2022–Feb 2023  
-Worked on deep learning for pelvic MRI to CT image translation  
-Supervisors: Dr. Thomas Fevens & Dr. Susanne Mayer
+**Doctoral researcher · CRCHUM / Polytechnique Montréal**<br>
+August 2023–present<br>
+Developing self-supervised methods for medical image analysis with Samuel Kadoury. Projects include intracranial hemorrhage segmentation with Laurent Létourneau-Guillon and pediatric brain tumour imaging with collaborators at CHU Sainte-Justine.
 
-**Graduate Research Assistant**  
-*Concordia University* – May 2021–Aug 2022  
-Designed a multi-stage pipeline for diabetic macular edema grading in fundus images  
-Supervisor: Dr. Thomas Fevens
+**Research internship · MedirAI**<br>
+October 2025–February 2026<br>
+Lesion segmentation for a skin cancer detection application.
 
-**Undergraduate Research Assistant**  
-*Concordia University* – May 2020–Aug 2020  
-Improved lower limb angle prediction using deep learning  
-Supervisors: Dr. Thomas Fevens & Dr. Paul André Martineau
+**Master's thesis research · LMU Munich**<br>
+March–August 2023<br>
+Developed and evaluated a computer vision prototype for radiographic hand positioning with Thomas Fevens and Michael Ingrisch.
 
----
+**Guest scientist · LMU Munich**<br>
+September 2022–March 2023<br>
+MRI-to-CT translation research with Susanne Mayer, supported by a Mitacs Globalink Research Award.
 
-## 💼 Work Experience
+**Research assistant · Concordia University**<br>
+May–August 2021<br>
+Developed an interpretable pipeline for grading hard exudates in fundus images, including fovea detection, optic disc segmentation, and lesion segmentation.
 
-**Intern Software Developer (ML Backend)**  
-*Coveo*, Montreal – Jan 2021–May 2021  
-Maintained infrastructure for company-specific ML models
+**Undergraduate research · Concordia University**<br>
+May–December 2020<br>
+Improved lower-limb pose estimation and inference speed; developed a mobile jump assessment prototype and integrated an Azure Kinect sensor into orthopaedic software.
 
-**Intern Software Developer (Full Stack)**  
-*Groupe Dynamite*, Montreal – Jun 2019–Aug 2019  
-Built internal tools and microservices for data processing
+## Industry experience
 
----
+**Machine learning back-end developer · Coveo**<br>
+January–May 2021<br>
+Contributed to Java microservices, cloud deployment of company-specific ML models, and infrastructure as code.
 
-## 🧪 Selected Projects
+**Full stack developer · Groupe Dynamite**<br>
+June–August 2019<br>
+Built features for internal web and mobile applications using React and Node.js, and Python microservices for data engineering.
 
-**Multi-Omics Surgery Grading** (Jan 2023–Aug 2023)  
-Collaborated with Dr. Mayer, Dr. Holzapfel, and ImageBiopsy to predict hip arthroplasty difficulty from multi-modal data
+## Clinical innovation
 
-**Xact (MedTech Startup Founder)** (Sept 2021–Present)  
-Developed deep learning-powered solution for radiographic misalignment  
-Won 1st place in Surgical Innovation Competition, secured GCS Innovation Fund (Phase 1)
+**XAct · Radiographic positioning guidance**<br>
+Led the technical development of a computer vision and depth-sensing prototype, from a clinical need identified through the Surgical Innovation Program to evaluation at LMU Klinikum. The team won first place in the program's pitch competition and received GCS Innovation Fund support.
 
-**Athletic Jump Mechanics App** (Fall 2020)  
-Created real-time 3D pose estimation tool and Android app for jump assessments using Azure Kinect
+[Explore the project](/portfolio/portfolio-1/) · [Master's thesis](https://spectrum.library.concordia.ca/id/eprint/992737/) · [Code](https://github.com/aloyspx/XAct)
 
----
+**Movement analysis · Research contribution to HurtBlocker**<br>
+Contributed Kinect integration and real-time joint depth estimation and correction research to the larger effort behind the movement screening application. My role was a focused research contribution within a larger team.
 
-## 📚 Publications
-<ul>{% for post in site.publications reversed %}
-  {% include archive-single-cv.html %}
-{% endfor %}</ul>
+[Research contribution](/portfolio/portfolio-2/) · [HurtBlocker on the App Store](https://apps.apple.com/ca/app/hurtblocker/id6747727133)
 
----
+## Publications
 
-## 🏆 Awards
+See [Publications](/publications/) for the full list and paper links, or my [Google Scholar profile](https://scholar.google.com/citations?user=LFc_L00AAAAJ).
 
-- **Top 3 Poster Prize** – AI at the Medical Faculty Symposium (LMU), 2023
-- **Globalink Research Award** – Mitacs, 2022
-- **Conference & Exposition Award** – Concordia University, 2021
-- **NSERC CREATE Surgival Innovation Scholarship** - McGill and Concordia University, 2021/23
-- **Hydro-Quebec Master's Award** – 2021/22
-- **NSERC USRA** – 2020
+<div class="print-only">
+{% assign papers = site.publications | sort: 'date' | reverse %}
+{% for paper in papers %}<p><strong>{{ paper.title }}</strong><br>{{ paper.authors }}. {{ paper.venue }}, {{ paper.date | date: '%Y' }}.</p>{% endfor %}
+</div>
 
----
+## Selected awards
 
-## 🛠️ Skills
+- **Canada Graduate Research Scholarship – Doctoral (CGRS D)** · NSERC, 2026
+- **Top-three poster prize** · AI at the Medical Faculty Symposium, LMU, 2023
+- **GCS Innovation Fund** · Concordia University, 2022
+- **Globalink Research Award** · Mitacs, 2022
+- **Conference and Exposition Award** · Concordia University, 2021
+- **NSERC CREATE — Innovation at the Cutting Edge** · Master's research support
+- **Hydro-Québec Master's Scholarship** · 2021
+- **Merit Scholarship** · Government of Québec, 2021
+- **Undergraduate Student Research Award (USRA)** · NSERC, 2020
 
-**Programming**: Python, PyTorch, full-stack development, cloud ML infrastructure  
-**Languages**: English & French (bilingual), Spanish (B2), German (A1.1)
+## Service and leadership
 
----
+- Research mentoring in intracranial hemorrhage segmentation and radiotherapy toxicity analysis, documented in 2025.
+- Peer review for IEEE Transactions on Medical Imaging.
+- Treasurer, IEEE Concordia · August 2020–July 2021.
+- Director of Marketing, IEEE Concordia · August 2019–July 2020.
 
+## Technical skills and languages
 
+**Research and development:** Python, PyTorch, medical image analysis, deep learning, computer vision, Java, C#, JavaScript, React, Node.js, and cloud development.
+
+**Languages:** English and French (bilingual); Spanish (professional working proficiency).

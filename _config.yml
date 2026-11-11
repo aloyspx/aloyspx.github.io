@@ -12,7 +12,7 @@ site_theme               : "default"
 title                    : "Aloys Portafaix"
 title_separator          : "-"
 name                     : &name "Aloys Portafaix"
-description              : &description "personal description"
+description              : &description "Aloys Portafaix — PhD researcher in medical AI at Polytechnique Montréal and CRCHUM. Self-supervised learning, medical image analysis, and clinical innovation."
 url                      : "https://aloyspx.github.io" # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "aloyspx/aloyspx.github.io"
@@ -25,7 +25,7 @@ author:
   avatar           : "profile_pic.png"
   name             : "Aloys Portafaix"
   pronouns         : # example: "she/her"  
-  bio              : "Computer Eng. PhD Student"
+  bio              : "PhD researcher in medical AI · NSERC CGRS D Scholar"
   location         : "Montréal, Canada"
   employer         : "Polytechnique Montréal"
   uri              : # URL
@@ -81,6 +81,8 @@ publication_category:
     title: 'Journal Articles'    
   conferences:
     title: 'Conference Papers'
+  abstracts:
+    title: 'Conference Abstracts'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -156,6 +158,13 @@ include:
   - _pages
   - files
 exclude:
+  - PRODUCT.md
+  - DESIGN.md
+  - CONTENT_SOURCES.md
+  - .impeccable
+  - .agents
+  - .codex
+  - .idea
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
@@ -259,7 +268,7 @@ defaults:
       path: ""
       type: publications
     values:
-      layout: single
+      layout: editorial-detail
       author_profile: true
       share: true
       comments: true
@@ -268,7 +277,7 @@ defaults:
       path: ""
       type: portfolio
     values:
-      layout: single
+      layout: editorial-detail
       author_profile: true
       share: true
       comment: true

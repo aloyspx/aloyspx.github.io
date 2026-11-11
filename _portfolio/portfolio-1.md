@@ -1,22 +1,25 @@
 ---
-title: "Project - XAct-v1"
-excerpt: "The first iteration of the XAct prototype which aims to aid technicians correctly position patients during X-Rays.<br/><br/><img width='750' src='/images/demo_thesis.gif'>"
+title: "XAct — radiographic positioning guidance"
 collection: portfolio
+excerpt: "A computer vision and depth-sensing research prototype for guiding hand positioning during X-rays."
 ---
 
+## Starting with a clinical need
 
-## Problem
-XAct addresses a critical challenge in radiography: **improper patient positioning** which leads to diagnostic errors and repeated X-Rays. 
+Patient positioning is an important part of obtaining a useful radiograph. XAct explores how computer vision and depth sensing can provide real-time feedback to support that step.
 
-## Approach
-To tackle this issue, I developed a real-time guidance system using computer vision that tracks positioning information. The system provides instant feedback for three standard hand radiographic views: Posterior-Anterior, Oblique, and Lateral. 
-The technical foundation of XAct integrates advanced hand pose estimation algorithms with precision depth sensing via an OAK-D Pro camera. My implementation uses RANSAC plane fitting to calculate key positioning parameters in real-time. The system continuously evaluates hand position against precise radiographic constraints and delivers clear visual feedback to guide proper alignment. This technological solution directly addresses a fundamental limitation in current X-ray procedures, where image quality heavily depends on individual technician skill and experience.
+The project began in McGill's Surgical Innovation Program, where our team won first place in the final pitch competition. I led the prototype's technical development and its evaluation with radiology collaborators at LMU Klinikum in Munich.
 
-## Outcome
-With studies indicating over 50% of radiographs are suboptimal and up to 20% requiring retakes, XAct offers a scalable solution with significant market potential. Beyond the clear financial benefits to healthcare providers, XAct enhances patient outcomes by improving diagnostic accuracy, reducing unnecessary radiation exposure, and optimizing clinical workflows. This project demonstrates my ability to identify healthcare inefficiencies and develop technological solutions with both clinical and commercial impact.
+<video controls playsinline preload="none" poster="{{ '/images/research/xact-poster.jpg' | relative_url }}" aria-label="XAct demonstration of hand positioning feedback"><source src="{{ '/images/research/xact-demo.mp4' | relative_url }}" type="video/mp4"><a href="{{ '/images/research/xact-demo.mp4' | relative_url }}">Watch the prototype demonstration</a></video>
 
-💼 The business analysis is available [here](https://drive.google.com/file/d/157nnKEnz36rstDCohn_lKq9gwT4n_nvS/view?usp=sharing).
+## The prototype
 
-📝 The detailled technical information and experimental results can be found in my [thesis](https://spectrum.library.concordia.ca/id/eprint/992737/) (open-access on August 1st 2025) or [conference paper](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12929/1292910/Computer-vision-based-guidance-tool-for-correct-radiographic-hand-positioning/10.1117/12.3005807.short).
+The tool combines hand landmark estimation with an OAK-D Pro depth sensor. RANSAC plane fitting estimates the detector plane, and the system checks positioning parameters against three radiographic protocols: posterior-anterior, oblique, and lateral.
 
-👨‍💻 The code is available [here](https://github.com/aloyspx/XAct).
+The interface displays landmarks, positioning measurements, and feedback as the hand moves. This is a research prototype; the demonstration shows the system evaluated in my master's work.
+
+## Evaluation and publication
+
+We assessed the prototype with a radiology technician and conducted a double-blind radiologist evaluation of images obtained with a hand phantom. The method and evaluation are documented in my master's thesis and SPIE Medical Imaging 2024 paper.
+
+[Master's thesis](https://spectrum.library.concordia.ca/id/eprint/992737/) · [Conference paper](https://doi.org/10.1117/12.3005807) · [Source code](https://github.com/aloyspx/XAct)

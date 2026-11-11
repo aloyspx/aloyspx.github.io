@@ -1,30 +1,29 @@
 ---
-title: "Code - MBH-Seg Challenge Submission"
-excerpt: "Classic supervised segmentation learning and mean teacher implementation for intracranial hemorrhage segmentation for the MBH challenge. <br/><br/><video width='750' controls><source src='/images/mbh_seg.m4v' type='video/mp4'>Your browser does not support the video tag.</video>"
+title: "Intracranial hemorrhage segmentation"
 collection: portfolio
+excerpt: "Challenge participation, self-supervised learning, and multiclass head CT segmentation."
 ---
 
-### Introduction
+## A clinical problem with heterogeneous data
 
-The challenge focuses on automating the segmentation of intracranial hemorrhage on CT scans, a time-consuming process for clinicians. The 2024 MBH-Seg challenge aims to bridge this gap by providing labeled and unlabeled data, reflecting typical clinical scenarios with large unlabeled datasets and limited expert annotations. Initial dataset preprocessing involved quality control, excluding problematic samples and retaining 1577 unlabeled and 172 labeled volumes for the study. We tested multiple models including a classical supervised model with different architectures and tuned data augmentations, as well as a semi-supervised approach relying on the mean teacher paradigm.
+Intracranial hemorrhage segmentation requires models to distinguish related findings across scans and annotation protocols. My work with Laurent Létourneau-Guillon and Samuel Kadoury spans supervised and self-supervised approaches to this problem.
 
-### Overview of our Solution
+## MBH-Seg challenge
 
-Baseline models using nnUNet were tested, with a 3D nnUNet using a specific brain window and z-normalization performing best. Supervised models, specifically SwinUNETRv2 combined with tailored Hounsfield Unit windowing, patch sampling, specific data augmentation techniques, and linear interpolation, demonstrated an improvement of over 8% in mean Dice score compared to the best nnUNet baseline. A semi-supervised "Mean Teacher" approach initially showed promise with consistent improvements in cross-validation. However, in the final challenge evaluation, the fully supervised model achieved better results than the Mean Teacher models. This discrepancy might be due to the Mean Teacher model amplifying labeling errors via confirmation bias, exacerbated by a distribution shift between the training and testing datasets.
+Our submission to the MICCAI 2024 MBH-Seg challenge explored supervised segmentation and a mean teacher approach. We placed seventh overall. The work highlighted challenges in handling dataset heterogeneity, label quality, and differences between validation and challenge test data.
 
-### Results
+<video controls playsinline preload="none" aria-label="Intracranial hemorrhage segmentation demonstration"><source src="{{ '/images/mbh_seg.m4v' | relative_url }}" type="video/mp4"><a href="{{ '/images/mbh_seg.m4v' | relative_url }}">Watch the segmentation demonstration</a></video>
 
-For a full overview of the results, we recommend looking at the report below which details different results for baselines and proposed models. 
+## Self-supervised pretraining and multi-label decoding
 
-### Things To Do
+Our SWITCH 2025 paper studies self-supervised pretraining and dataset-specific decoding heads to learn from datasets with different annotation protocols.
 
-Based on the report, potential areas for future work include:
+[Explore the SWITCH project](/portfolio/switch/) · [Read the paper](https://doi.org/10.1007/978-3-032-07945-9_9)
 
-* Evaluating the impact of the initial data exclusion step on final model performance, which was skipped due to time constraints.
-* Investigating the underperformance of the Mean Teacher method on the challenge test set, focusing on the effects of confirmation bias and dataset distribution shift.
-* Exploring further refinements in preprocessing, such as specific methods to handle uncorrected gantry tilt identified in the dataset.
+## Multiclass CT dataset and benchmark
 
+I contributed baseline model development, validation, and manuscript preparation to a multiclass segmentation study covering intracerebral hemorrhage, intraventricular hemorrhage, and perihematomal edema. The paper was published in *Radiology Advances* in 2026.
 
-📝 The report is available [here](https://drive.google.com/file/d/1mrg3PnsHHC7E-hWE2FC8WHry4wiG4IqU/view?usp=sharing)
+[Read the Radiology Advances article](https://doi.org/10.1093/radadv/umag036)
 
-👨‍💻 The code is coming soon...
+The article describes plans for public release of the data and model; refer to the publisher's page for current availability.

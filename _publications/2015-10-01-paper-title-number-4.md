@@ -3,7 +3,8 @@ title: "Self-supervised Pretraining and Multi-label Decoding for Intracranial He
 collection: publications
 category: conferences
 excerpt: 'We propose a two-phase learning framework leveraging self-supervised pretraining and multi-label decoding to improve intracranial hemorrhage segmentation across heterogeneous datasets.'
-date: '2025-09-23'
+date: '2025-10-10'
+authors: 'Aloys Portafaix, Laurent Létourneau-Guillon, and Samuel Kadoury'
 venue: 'Image Analysis in Stroke Diagnosis and Interventions (SWITCH 2025), in conjunction with MICCAI 2025'
 paperurl: 'https://doi.org/10.1007/978-3-032-07945-9_9'
 citation: 'Portafaix, A., Létourneau-Guillon, L., & Kadoury, S. (2025). &quot;Self-supervised Pretraining and Multi-label Decoding for Intracranial Hemorrhage Segmentation.&quot; In <i>Image Analysis in Stroke Diagnosis and Interventions: 5th International Workshop, SWITCH 2025, Held in Conjunction with MICCAI 2025, Daejeon, South Korea, Proceedings</i>, Springer-Verlag, pp. 83–93. https://doi.org/10.1007/978-3-032-07945-9_9'

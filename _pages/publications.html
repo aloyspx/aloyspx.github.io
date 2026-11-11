@@ -1,36 +1,18 @@
 ---
-layout: archive
+layout: editorial-page
 title: "Publications"
 permalink: /publications/
-author_profile: true
+intro: "Self-supervised learning, medical image analysis, and computer vision for clinical applications."
 ---
-
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
-{% include base_path %}
-
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
-
-
-
+<div class="link-row" style="margin-bottom:32px"><a class="text-link" href="{{ site.author.googlescholar }}">Google Scholar{% include editorial-arrow.html %}</a><a class="text-link" href="{{ site.author.orcid }}">ORCID{% include editorial-arrow.html %}</a></div>
+<div class="filter-bar" data-publication-filters hidden role="group" aria-label="Filter publications by type">
+  <button class="filter-button" type="button" data-filter="all" aria-pressed="true">All publications</button>
+  <button class="filter-button" type="button" data-filter="manuscripts" aria-pressed="false">Journal articles</button>
+  <button class="filter-button" type="button" data-filter="conferences" aria-pressed="false">Conference papers</button>
+  <button class="filter-button" type="button" data-filter="abstracts" aria-pressed="false">Conference abstracts</button>
+</div>
+<p class="filter-status" data-filter-status role="status" aria-live="polite" aria-atomic="true"></p>
+<div class="publications-list">
+  {% assign papers = site.publications | sort: 'date' | reverse %}
+  {% for paper in papers %}{% include editorial-publication.html paper=paper heading='h2' %}{% endfor %}
+</div>

@@ -1,15 +1,27 @@
 ---
-title: "Project - Azure Kinect Integration for Kinect Intelligent Tracking System"
-excerpt: "Added the Microsoft Azure Kinect to a pre-existing software for ACL risk assessment as part of my second bachelors honours project. <br/><br/><img width='750' src='/images/demo_kits.png'>"
+title: "Movement analysis & HurtBlocker"
 collection: portfolio
+excerpt: "Focused research contributions in Kinect integration and real-time joint depth estimation and correction."
 ---
 
-## Overview
+## From pose estimates to movement assessment
 
-With the discontinuation of the Kinect v2, we needed to transition our implementation to the Azure Kinect. I was tasked with developing a first working prototype to evaluate the feasibility of the switch and determine whether the Azure Kinect could deliver results that matched or exceeded those of the Kinect v2.
+My undergraduate research focused on improving lower-limb tracking for athletic jump mechanics assessment. With Thomas Fevens, I studied ways to improve joint position estimates and reduce inference time, including real-time depth estimation and post-processing corrections.
 
-Initial testing showed that both devices produced comparable outcomes. However, the Azure Kinect requires GPU acceleration, which adds some complexity to deployment.
+I also developed a mobile assessment prototype and integrated the Azure Kinect into an existing orthopaedic movement assessment system, as part of my honours projects.
 
-The project was successfully completed by other members of the team and the results were published [here](https://pubmed.ncbi.nlm.nih.gov/36790216/).
+![Kinect-based athletic movement assessment research prototype.](/images/demo_kits.png)
 
-👨‍💻 The code is not publicly available as the project is part of an ongoing collaboration between McGill and Concordia University.
+## A contribution to the work behind HurtBlocker
+
+This research formed part of the wider effort behind **HurtBlocker**, a movement screening application. My role was a focused research contribution in Kinect integration and real-time joint depth estimation and correction, within a larger team effort.
+
+HurtBlocker is available on the [App Store](https://apps.apple.com/ca/app/hurtblocker/id6747727133) and [Google Play](https://play.google.com/store/apps/details?id=ca.semperform.hurtblocker).
+
+## Related research
+
+[Improving Accuracy and Runtime of Skeletal Tracking of Lower Limbs for Athletic Jump Mechanics Assessment](https://doi.org/10.1109/EMBC46164.2021.9629726) · EMBC 2021
+
+[Later work from the Kinect collaboration](https://pubmed.ncbi.nlm.nih.gov/36790216/)
+
+The Kinect integration was subsequently completed by other members of the collaboration. The project code is not publicly available.

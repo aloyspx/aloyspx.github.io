@@ -1,0 +1,15 @@
+---
+layout: editorial
+---
+<article class="detail-page">
+  <a class="back-link" href="{% if page.collection == 'publications' %}{{ '/publications/' | relative_url }}{% else %}{{ '/portfolio/' | relative_url }}{% endif %}">{% if page.collection == 'publications' %}All publications{% else %}All projects{% endif %}</a>
+  <header class="detail-heading">
+    <h1>{{ page.title }}</h1>
+    {% if page.authors %}<p>{{ page.authors | escape }}</p>{% endif %}
+    {% if page.venue %}<p class="metadata">{{ page.venue }} · {{ page.date | date: '%Y' }}</p>{% endif %}
+    {% if page.author_note %}<p class="metadata">{{ page.author_note }}</p>{% endif %}
+    {% if page.paperurl %}<div class="link-row"><a class="text-link" href="{{ page.paperurl }}">Read {{ page.link_label | default: 'paper' | downcase }}{% include editorial-arrow.html %}</a>{% if page.codeurl %}<a class="text-link" href="{{ page.codeurl }}">Code{% include editorial-arrow.html %}</a>{% endif %}</div>{% endif %}
+  </header>
+  <div class="prose">{{ content }}</div>
+  {% if page.citation %}<details class="citation"><summary>Citation</summary><p>{{ page.citation }}</p></details>{% endif %}
+</article>

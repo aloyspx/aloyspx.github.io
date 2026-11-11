@@ -1,0 +1,10 @@
+<article class="publication-row" data-publication-category="{{ include.paper.category }}">
+  <span class="publication-year">{{ include.paper.date | date: '%Y' }}</span>
+  <div>
+    {% if include.heading == 'h3' %}<h3><a href="{{ include.paper.url | relative_url }}">{{ include.paper.title }}</a></h3>{% else %}<h2><a href="{{ include.paper.url | relative_url }}">{{ include.paper.title }}</a></h2>{% endif %}
+    <p class="publication-authors">{{ include.paper.authors | escape }}</p>
+    <p class="publication-venue">{{ include.paper.venue }}</p>
+    {% if include.paper.author_note %}<p class="metadata">{{ include.paper.author_note }}</p>{% endif %}
+  </div>
+  <div class="publication-links"><a href="{{ include.paper.paperurl }}" aria-label="Read {{ include.paper.title | escape }}">{{ include.paper.link_label | default: 'Paper' }}{% include editorial-arrow.html %}</a>{% if include.paper.codeurl %}<a href="{{ include.paper.codeurl }}" aria-label="Code for {{ include.paper.title | escape }}">Code{% include editorial-arrow.html %}</a>{% endif %}</div>
+</article>
