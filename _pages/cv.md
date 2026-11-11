@@ -110,4 +110,4 @@ See [Publications](/publications/) for the full list and paper links, or my [Goo
 
 **Research and development:** Python, PyTorch, medical image analysis, deep learning, computer vision, Java, C#, JavaScript, React, Node.js, and cloud development.
 
-**Languages:** English and French (bilingual); Spanish (professional working proficiency).
+**Languages:** English and French (bilingual); Spanish (conversational).
